@@ -14,7 +14,7 @@
 		"MWHEELDOWN"		"slot2"
 		"q"		"drop"
 		"g"		"+dropbomb"
-		"h"		"<unbound>"
+		"h"		"+buysmoke"
 		"F3"		"<unbound>"
 		"F4"		"<unbound>"
 		"1"		"slot6"
