@@ -97,8 +97,8 @@ Si tu vois ce message, la config est chargée correctement.
 ## 🌐 Wi-Fi vs Filaire
 
 Dans `autoexec.cfg`, ligne `cl_net_buffer_ticks` :
-- **Filaire** → `cl_net_buffer_ticks 1` (défaut dans cette config)
-- **Wi-Fi** → `cl_net_buffer_ticks 2`
+- **Wi-Fi** → `cl_net_buffer_ticks 2` (défaut dans cette config)
+- **Filaire** → `cl_net_buffer_ticks 1`
 
 Modifie selon ta connexion.
 
