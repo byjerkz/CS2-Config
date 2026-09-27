@@ -1,179 +1,173 @@
-<div align="center">
+# 🎯 CS2 Config — by JKZ
 
-# 🎮 CS2 PRO LOW LATENCY CONFIG
-### by.jkz — v4.1
-
-![CS2](https://img.shields.io/badge/Game-Counter--Strike%202-orange?style=flat-square)
-![Version](https://img.shields.io/badge/Version-4.1-blue?style=flat-square)
-![Updated](https://img.shields.io/badge/Updated-Septembre%202026-green?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square)
-
-**Config CS2 compétitif / FACEIT / Low Latency**  
-Auditée depuis les fichiers Steam réels — 100% reproductible
-
-</div>
+> Setup compétitif CS2 | FACEIT | Low Latency  
+> 800 DPI · sens 1.25 · eDPI 1000 · 1280×960 4:3 · 120Hz
 
 ---
 
-## 📁 Structure du repo
+## 📁 Structure
 
 ```
 CS2-Config/
-├── README.md                          ← Ce fichier
-├── autoexec.cfg                       ← Config principale CS2
-├── cs2_video.txt                      ← Paramètres vidéo optimisés
+├── autoexec.cfg                          # Config principale (exécutée au lancement)
+├── cs2_video.txt                         # Paramètres vidéo
+├── .gitignore
+├── .gitattributes
+├── LICENSE
 ├── cfg/
-│   ├── cs2_user_convars_0_slot0.vcfg  ← Crosshair + sensibilité (Steam)
-│   ├── cs2_user_keys_0_slot0.vcfg     ← Binds (Steam)
-│   └── M36HE-CS2.json                ← Profil clavier M36HE (Attack Shark)
+│   ├── cs2_user_convars_0_slot0.vcfg     # Réglages utilisateur (crosshair, souris, viewmodel)
+│   ├── cs2_user_keys_0_slot0.vcfg        # Binds clavier/souris
+│   ├── cs2_machine_convars.vcfg          # Réglages machine (réseau, audio, HUD)
+│   └── M36HE-CS2.json                    # Profil clavier Attack Shark M36HE
 └── docs/
-    ├── installation.md                ← Guide d'installation détaillé
-    ├── hardware.md                    ← Setup hardware + NVIDIA
-    └── crosshair.md                   ← Détails crosshair
+    ├── installation.md
+    ├── hardware.md
+    └── crosshair.md
 ```
-
----
-
-## ⚡ Installation rapide
-
-### 1️⃣ autoexec.cfg
-```
-C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg\
-```
-
-### 2️⃣ cs2_video.txt + fichiers cfg/
-```
-C:\Program Files (x86)\Steam\userdata\[TON_STEAM_ID]\730\local\cfg\
-```
-> ⚠️ Remplace `[TON_STEAM_ID]` par ton propre Steam ID  
-> ⚠️ Mets `cs2_video.txt` en **lecture seule** après installation
-
-### 3️⃣ Profil clavier M36HE
-Importer `cfg/M36HE-CS2.json` dans le logiciel **Attack Shark**
-
-### 4️⃣ Options de lancement Steam
-```
--novid +fps_max 240 +exec autoexec.cfg -allow_third_party_software -nojoy
-```
-> Adapte `fps_max` selon ton Hz : 120Hz→240 / 144Hz→288 / 240Hz→480 / 360Hz→720
-
-📄 [Guide d'installation complet](docs/installation.md)
-
----
-
-## 🖥️ Paramètres vidéo
-
-| Paramètre | Valeur |
-|---|---|
-| Résolution | **1280x960** (4:3 stretch) |
-| Mode | **Plein écran exclusif** |
-| VSync | **OFF** |
-| Low Latency | **ON** |
-| MSAA | **OFF** |
-| Ombres | **OFF** |
-| HDR | **OFF** |
-
----
-
-## 🎯 Crosshair
-
-| Paramètre | Valeur |
-|---|---|
-| Style | 2 — Statique |
-| Taille | 1.5 |
-| Gap | -2 (fixe) |
-| Couleur | Cyan (R:50 G:255 B:255) |
-| Contour | Oui |
-| Recoil | Non |
-
-📄 [Détails crosshair](docs/crosshair.md)
 
 ---
 
 ## 🖱️ Souris
 
 | Paramètre | Valeur |
-|---|---|
-| DPI | **800** |
-| Sensitivity in-game | **1.25** |
+|-----------|--------|
+| DPI | 800 |
+| Sensibilité CS2 | 1.25 |
 | eDPI | **1000** |
-| Polling rate | **2000Hz** |
-| Angle Snap | **OFF** |
+| m_pitch | 0.022 |
+| m_yaw | 0.022 |
+| zoom_sensitivity_ratio | 1 |
+| sensitivity_y_scale | 1 |
 
 ---
 
-## 🌐 Réseau
+## ✳️ Crosshair
 
 | Paramètre | Valeur |
-|---|---|
+|-----------|--------|
+| Style | 2 (Classique statique) |
+| Couleur | Cyan (R:50 G:255 B:255) |
+| Alpha | 255 |
+| Gap | +2 |
+| Length | 4 |
+| Thickness | 2 |
+| Size | 1.5 |
+| Dot | OFF |
+| Outline | ON |
+| T-shape | OFF |
+| Recoil | OFF |
+
+**Share code** : `CSGO-XXXXX` *(générer via le jeu)*
+
+---
+
+## 🔫 Viewmodel
+
+| Paramètre | Valeur |
+|-----------|--------|
+| viewmodel_fov | 68 |
+| viewmodel_offset_x | 2.5 |
+| viewmodel_offset_y | 0 |
+| viewmodel_offset_z | -1.5 |
+| Preset | 2 (Compétitif) |
+
+---
+
+## 🖥️ Vidéo
+
+| Paramètre | Valeur |
+|-----------|--------|
+| Résolution | 1280×960 |
+| Ratio | 4:3 |
+| Mode | Plein écran |
+| Refresh rate | 120Hz |
+| VSync | OFF |
+| Low Latency | OFF |
+| MSAA | OFF |
+| Shadows | ON |
+| HDR Detail | 3 |
+
+---
+
+## ⚡ Réseau & Performance
+
+| Paramètre | Valeur |
+|-----------|--------|
 | rate | 786432 |
-| cl_net_buffer_ticks | **1** (filaire) / **2** (Wi-Fi) |
+| cl_net_buffer_ticks | 1 (filaire) / 2 (Wi-Fi) |
 | mm_dedicated_search_maxping | 25ms |
+| fps_max | 240 |
+
+> ⚠️ Le fichier `cs2_machine_convars.vcfg` est actuellement configuré avec `cl_net_buffer_ticks 2` (mode Wi-Fi).  
+> Passe à `1` si tu joues en filaire.
+
+---
+
+## 🎧 Audio
+
+| Paramètre | Valeur |
+|-----------|--------|
+| snd_headphone_eq | 1 (EQ Valve désactivé) |
+| snd_spatialize_lerp | 0.8 |
+| snd_mixahead | 0.011 |
+| Musiques (menu/MVP/round) | OFF |
+| Volume vocal équipe | 0.3 |
+| snd_tensecondwarning_volume | 0.05 |
 
 ---
 
 ## ⌨️ Binds principaux
 
 | Touche | Action |
-|---|---|
+|--------|--------|
 | SHIFT | Drop arme secondaire |
 | G | Drop bombe |
-| CTRL | Équiper bombe |
+| 1 | HE Grenade (slot6) |
+| 2 | Flashbang (slot7) |
+| 3 | Smoke (slot9) |
+| 4 | Molotov/Incendiaire (slot8) |
+| 5 | Decoy (slot10) |
+| SPACE | Jump |
+| CTRL | Équiper bombe (slot5) |
+| MOUSE4 | Duck |
+| MOUSE5 | Sprint |
+| MWHEELUP | Arme principale |
+| MWHEELDOWN | Arme secondaire |
 | E | Couteau |
 | F | Use / Ramasser |
-| Q | Jeter arme |
-| 1-5 | Nades (HE/Flash/Smoke/Molotov/Decoy) |
-| MOUSE4 | Accroupi |
-| MOUSE5 | Sprint |
-| MWHEELUP/DOWN | Arme principale / secondaire |
+| Q | Drop arme |
 | X | Push to talk |
-| P | Recharger autoexec |
+| T | Chat équipe |
+| P | Reload autoexec |
+| ` | Console |
 
 ---
 
-## ⌨️ Clavier M36HE — Profil Hall Effect
+## 🚀 Launch Options Steam
 
-| Touche | Trigger | Fast Trigger |
-|---|---|---|
-| W / A / S / D | 0.2mm | ✅ ON (sensitivity 0.2mm) |
-| E / F / L-Shift / Space | 0.3mm | ❌ |
-| L-Ctrl | 0.5mm | ❌ |
-| 1 / 2 / 3 / 4 / 5 | 0.4mm | ❌ |
-| Q / G / Esc / F1-F6 | 0.8mm | ❌ |
-| Reste | 1.2mm | ❌ |
-
-> SOCD activé sur A+D (Snap Tap)
+```
+-novid +fps_max 240 +exec autoexec.cfg -allow_third_party_software -nojoy
+```
 
 ---
 
-## 🎮 Setup Hardware
+## 🛠️ Installation
+
+Voir [`docs/installation.md`](docs/installation.md) pour le guide complet.
+
+---
+
+## 💻 Hardware
 
 | Composant | Modèle |
-|---|---|
-| Souris | Attack Shark R5 Ultra 8K PAW3950MAX |
+|-----------|--------|
 | Clavier | Attack Shark M36HE (Hall Effect) |
-
-📄 [Détails hardware + NVIDIA](docs/hardware.md)
-
----
-
-## ✅ Checklist nouveau PC
-
-- [ ] `autoexec.cfg` → dossier `cfg\` CS2
-- [ ] `cs2_video.txt` → dossier `userdata\[STEAMID]\730\local\cfg\`
-- [ ] `cs2_video.txt` en **lecture seule**
-- [ ] Fichiers `cfg/*.vcfg` → même dossier que cs2_video.txt
-- [ ] Options de lancement Steam ajoutées
-- [ ] Message de confirmation en console CS2 ✅
-- [ ] Panneau NVIDIA configuré
-- [ ] Mode alimentation Windows → Performances élevées
-- [ ] Souris : 800 DPI / 2000Hz / Angle Snap OFF
-- [ ] Clavier M36HE : importer `cfg/M36HE-CS2.json`
+| Setup | Voir [`docs/hardware.md`](docs/hardware.md) |
 
 ---
 
-<div align="center">
+## 📝 Notes
 
-*Config v4.1 — Auditée depuis les fichiers Steam réels — septembre 2026*
-
-</div>
+- Config optimisée pour jeu **filaire** — adapter `cl_net_buffer_ticks` si Wi-Fi
+- `fps_max 240` — adapter selon le Hz de ton écran
+- Le profil clavier `cfg/M36HE-CS2.json` est importable directement dans le logiciel Attack Shark
