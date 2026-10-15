@@ -67,7 +67,7 @@ C:\Program Files (x86)\Steam\userdata\[TON_STEAM_ID]\730\local\cfg\
 3. **Options de lancement**
 4. Colle :
 ```
--novid +fps_max 240 +exec autoexec.cfg -allow_third_party_software -nojoy
+-novid +fps_max 240 +exec autoexec.cfg -allow_third_party_software -nojoy -noforcemaccel -noforcemparms
 ```
 
 > ⚠️ Adapte `fps_max` selon ton écran :
@@ -81,12 +81,12 @@ C:\Program Files (x86)\Steam\userdata\[TON_STEAM_ID]\730\local\cfg\
 
 ## ✅ Étape 5 — Vérification
 
-Lance CS2 → Ouvre la console (touche `` ` ``) → Tu dois voir :
+Lance CS2 → Ouvre la console (touche ` `` `) → Tu dois voir :
 
 ```
 ###############################################################
-#         🚀 CS2 PRO LOW LATENCY CONFIG v4.0 - LOADED        #
-#                    👨‍💻  by.jkz                              #
+#        CS2 PRO LOW LATENCY CONFIG v4.2 - LOADED             #
+#                       by.jkz                                #
 ###############################################################
 ```
 
@@ -94,10 +94,10 @@ Si tu vois ce message, la config est chargée correctement.
 
 ---
 
-## 🌐 Wi-Fi vs Filaire
+## 📶 Wi-Fi vs Filaire
 
 Dans `autoexec.cfg`, ligne `cl_net_buffer_ticks` :
-- **Wi-Fi** → `cl_net_buffer_ticks 2` (défaut dans cette config)
+- **Wi-Fi** → `cl_net_buffer_ticks 2`
 - **Filaire** → `cl_net_buffer_ticks 1`
 
 Modifie selon ta connexion.
@@ -106,11 +106,11 @@ Modifie selon ta connexion.
 
 ## ❓ Problèmes fréquents
 
-**La config ne se charge pas**
+**La config ne se charge pas**  
 → Vérifie que `autoexec.cfg` est bien dans le dossier `cfg\` et que l'option de lancement `+exec autoexec.cfg` est présente.
 
-**La résolution ne change pas**
+**La résolution ne change pas**  
 → Vérifie que `cs2_video.txt` est en lecture seule et au bon emplacement.
 
-**Les binds ne fonctionnent pas**
-→ Copie les fichiers `.vcfg` du dossier `cfg/` dans le dossier userdata Steam.
+**Les binds ne fonctionnent pas**  
+→ Copie les fichiers `.vcfg` du dossier `cfg/` dans le dossier userdata de CS2.
