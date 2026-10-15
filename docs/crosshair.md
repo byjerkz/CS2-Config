@@ -1,5 +1,7 @@
 # 🎯 Crosshair — by.jkz
 
+![Crosshair spray demo](crosshair-spray.gif)
+
 ## Pourquoi pas de code de partage CS2 ?
 
 Mon crosshair utilise `cl_crosshairgap_useweaponvalue true` — le gap s'adapte automatiquement selon l'arme équipée. Ce comportement est propre à chaque arme dans CS2 et ne se transfère pas fidèlement via le code de partage. Les commandes console ci-dessous garantissent un résultat 100% identique.
@@ -26,7 +28,7 @@ Mon crosshair utilise `cl_crosshairgap_useweaponvalue true` — le gap s'adapte 
 
 ## Commandes console — Copier-coller dans CS2
 
-Ouvre la console CS2 (touche ` ` `) et colle ces commandes :
+Ouvre la console CS2 (touche `` ` ``) et colle ces commandes :
 
 ```
 cl_crosshairstyle 2
@@ -48,7 +50,9 @@ cl_crosshair_t false
 cl_crosshair_recoil false
 ```
 
-> Ces commandes sont également dans `autoexec.cfg` et se chargent automatiquement au lancement de CS2.
+**Share code** : `CSJSX2Drey3BAFbDPFiwGwnAeV8GmLAPNLHM9aqNAVyowM`
+
+> Ces commandes sont à entrer manuellement dans la console ou via les fichiers `.vcfg` du dossier `cfg/`. Elles ne sont pas dans `autoexec.cfg` — le crosshair est géré par CS2 via tes fichiers userdata.
 
 ---
 
